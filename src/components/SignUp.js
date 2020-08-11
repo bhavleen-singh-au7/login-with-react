@@ -28,12 +28,12 @@ const SignUp = () => {
 
           <div className="form-group font-weight-bold px-4">
             <label htmlFor="password">Password</label>
-            <input type="password" name="password" id="password" className="form-control form-control-sm" />
+            <input type="password" name="password" id="password" className="form-control form-control-sm" placeholder="Enter Strong Password" />
           </div>
 
           <div className="form-group font-weight-bold px-4">
             <label htmlFor="confirm-pass">Confirm Password</label>
-            <input type="password" name="confirm-pass" id="confirm-pass" className="form-control form-control-sm" />
+            <input type="password" name="confirm-pass" id="confirm-pass" className="form-control form-control-sm" placeholder="Enter Password" style={{ visibility: 'hidden' }} />
           </div>
 
           <div className="text-center py-2 px-4">

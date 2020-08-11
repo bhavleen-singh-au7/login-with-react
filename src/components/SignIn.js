@@ -24,7 +24,7 @@ const SignIn = () => {
     setValues({ ...values, error: false, loading: true });
     DB.forEach((i) => {
       if (i.email === email && i.password === password) {
-        return console.log(`Be happy, You are logged in MR. ${i.name}`);
+        return console.log(`Be happy, You are logged in MR. ${i.name.toUpperCase()}`);
 
       }
     });
@@ -46,7 +46,8 @@ const SignIn = () => {
           <div className="form-group font-weight-bold px-4">
             <label htmlFor="password">Password</label>
             <input type="password" name="password"
-              onChange={handleChange('password')} id="password" className="form-control form-control-sm" />
+              onChange={handleChange('password')} id="password" className="form-control form-control-sm" placeholder="Enter Strong Password" />
+            <small className="form-text text-muted">Enter combination of atleast 6 characters.</small>
           </div>
 
           <div className="text-center py-2 px-4">
