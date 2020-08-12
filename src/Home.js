@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <App>
       <div className='text-center p-5'>
-        <h1>This Page is Not Protected</h1>
+        <h1 className='mt-5'>This Page is Not Protected</h1>
         <h3>Any User Can See This</h3>
         <img src={Ji} alt='my Mascott' />
       </div>

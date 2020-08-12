@@ -4,6 +4,7 @@ const Dashboard = () => {
   return (
     <Fragment>
       <h1>Dashboard</h1>
+      <h3>Hello Mr.</h3>
     </Fragment>
   );
 

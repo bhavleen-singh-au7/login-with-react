@@ -33,7 +33,7 @@ const SignIn = () => {
 
   const SignInForm = () => {
     return (
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className='mt-3'>
         <div className="customBorder py-3 my-5">
           <div className="form-group font-weight-bold px-4">
             <label htmlFor="email">Email</label>
@@ -47,7 +47,7 @@ const SignIn = () => {
             <label htmlFor="password">Password</label>
             <input type="password" name="password"
               onChange={handleChange('password')} id="password" className="form-control form-control-sm" placeholder="Enter Strong Password" />
-            <small className="form-text text-muted">Enter combination of atleast 6 characters.</small>
+            <small style={{ visibility: 'hidden' }} className="form-text text-muted">Enter combination of atleast 6 characters.</small>
           </div>
 
           <div className="text-center py-2 px-4">
